@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ID Card Photo Correction & Layout Tool - Legal Files</title>
+  <style>:root{--bg:#f6f8fb;--card:#ffffff;--text:#172033;--muted:#5f6b7a;--line:#e5eaf1;--brand:#2f6fed;--brand2:#174ea6;--soft:#eef4ff}*{box-sizing:border-box}html{font-size:16px}body{margin:0;background:linear-gradient(180deg,#f7faff 0%,#f4f6f9 100%);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans SC","Noto Sans",Arial,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.72}.wrap{width:min(920px,calc(100% - 28px));margin:0 auto;padding:28px 0 48px}.card{background:var(--card);border:1px solid var(--line);border-radius:22px;box-shadow:0 12px 34px rgba(18,38,63,.08);overflow:hidden}.hero{padding:34px 34px 24px;background:linear-gradient(135deg,#eef4ff 0%,#ffffff 70%);border-bottom:1px solid var(--line)}.badge{display:inline-flex;padding:5px 11px;border-radius:999px;background:#eaf2ff;color:var(--brand2);font-weight:700;font-size:.82rem}.hero h1{margin:0 0 8px;font-size:2rem;line-height:1.25}.date{margin:0;color:var(--muted);font-size:.98rem}.content{padding:28px 34px 34px}.notice{padding:16px 18px;border:1px solid #d9e7ff;background:var(--soft);border-radius:16px;color:#1d3d73;margin:0 0 24px}.notice strong{color:#0f2f67}h2{font-size:1.22rem;margin:30px 0 10px;padding-top:4px}p{margin:10px 0}ul{padding-left:1.4rem;margin:10px 0}li{margin:6px 0}.footer{border-top:1px solid var(--line);padding:18px 34px;color:var(--muted);font-size:.92rem;background:#fbfcff}.links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:22px}.link-card{display:block;text-decoration:none;color:var(--text);border:1px solid var(--line);background:#fff;border-radius:18px;padding:18px;box-shadow:0 6px 20px rgba(18,38,63,.06);transition:.16s ease}.link-card strong{display:block;color:var(--brand2);font-size:1.08rem}.link-card span{display:block;color:var(--muted);font-size:.92rem;margin-top:4px}.topnav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:16px}.home{color:var(--brand2);text-decoration:none;font-weight:700}.lang{display:flex;gap:8px;flex-wrap:wrap}.pill{display:inline-flex;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:5px 10px;color:var(--muted);background:#fff}.contact{font-weight:700;color:var(--brand2)}@media(max-width:640px){.wrap{width:min(100% - 18px,920px);padding:14px 0 28px}.hero{padding:24px 20px 18px}.hero h1{font-size:1.55rem}.content{padding:20px}.footer{padding:16px 20px}.links{grid-template-columns:1fr}.topnav{align-items:flex-start;flex-direction:column}h2{font-size:1.12rem}}.hidden{display:none!important}.switch-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.switch-btn{border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--brand2);padding:7px 12px;font-weight:700;cursor:pointer;font:inherit}</style>
+</head>
+<body>
+<main class="wrap">
+  <article class="card">
+    <header class="hero">
+      <h1 id="pageTitle">ID Card Photo Correction & Layout Tool</h1>
+      <p class="date" id="pageSubtitle">Terms of Service and Privacy Policy</p>
+      <div class="switch-row">
+        <button class="switch-btn" type="button" onclick="setLegalLang('en')">English</button>
+        <button class="switch-btn" type="button" onclick="setLegalLang('zhHans')">简体中文</button>
+        <button class="switch-btn" type="button" onclick="setLegalLang('zhHant')">繁體中文</button>
+      </div>
+    </header>
+
+    <section class="content hidden" id="enBlock">
+      <p class="notice"><strong>Notice:</strong> This tool is used for correction, cropping, layout, saving, and export of card-type images. Image processing is completed locally on the device; imported images are not uploaded.</p>
+      <div class="links">
+        <a class="link-card" href="./terms.html"><strong>Terms of Service</strong><span>English version</span></a>
+        <a class="link-card" href="./privacy.html"><strong>Privacy Policy</strong><span>English version</span></a>
+      </div>
+    </section>
+
+    <section class="content hidden" id="zhHansBlock">
+      <p class="notice"><strong>说明：</strong>本工具用于证卡类图片的矫正、裁边、排版、保存和导出。图片处理在设备本地完成，不上传导入的图片。</p>
+      <div class="links">
+        <a class="link-card" href="./terms_simplified_chinese.html"><strong>服务协议</strong><span>简体中文版本</span></a>
+        <a class="link-card" href="./privacy_simplified_chinese.html"><strong>隐私政策</strong><span>简体中文版本</span></a>
+      </div>
+    </section>
+
+    <section class="content hidden" id="zhHantBlock">
+      <p class="notice"><strong>說明：</strong>本工具用於證卡類圖片的矯正、裁邊、排版、儲存和匯出。圖片處理在裝置本地完成，不上傳匯入的圖片。</p>
+      <div class="links">
+        <a class="link-card" href="./terms_traditional_chinese.html"><strong>服務協議</strong><span>繁體中文版本</span></a>
+        <a class="link-card" href="./privacy_traditional_chinese.html"><strong>隱私政策</strong><span>繁體中文版本</span></a>
+      </div>
+    </section>
+
+    <footer class="footer" id="footerText">Contact: <span class="contact">plues.kam@gmail.com</span></footer>
+  </article>
+</main>
+<script>
+function setLegalLang(lang) {
+  var isHans = lang === 'zhHans';
+  var isHant = lang === 'zhHant';
+  document.documentElement.lang = isHans ? 'zh-CN' : (isHant ? 'zh-Hant' : 'en');
+  document.title = isHans ? '证卡图片矫正排版工具 - 法律文件' : (isHant ? '證卡圖片矯正排版工具 - 法律文件' : 'ID Card Photo Correction & Layout Tool - Legal Files');
+  document.getElementById('pageTitle').textContent = isHans ? '证卡图片矫正排版工具' : (isHant ? '證卡圖片矯正排版工具' : 'ID Card Photo Correction & Layout Tool');
+  document.getElementById('pageSubtitle').textContent = isHans ? '服务协议与隐私政策' : (isHant ? '服務協議與隱私政策' : 'Terms of Service and Privacy Policy');
+  document.getElementById('enBlock').classList.toggle('hidden', lang !== 'en');
+  document.getElementById('zhHansBlock').classList.toggle('hidden', !isHans);
+  document.getElementById('zhHantBlock').classList.toggle('hidden', !isHant);
+  document.getElementById('footerText').innerHTML = (isHans || isHant) ? ((isHans ? '联系方式：' : '聯絡方式：') + '<span class="contact">plues.kam@gmail.com</span>') : 'Contact: <span class="contact">plues.kam@gmail.com</span>';
+  try { localStorage.setItem('legal_lang', lang); } catch (e) {}
+}
+(function () {
+  var saved = null;
+  try { saved = localStorage.getItem('legal_lang'); } catch (e) {}
+  if (saved === 'zh') { saved = 'zhHans'; }
+  var langs = navigator.languages || [navigator.language || navigator.userLanguage || ''];
+  var normalized = langs.map(function (item) { return String(item || '').toLowerCase(); });
+  var autoHant = normalized.some(function (item) { return /^zh-(tw|hk|mo)/.test(item) || item === 'zh-hant' || item.indexOf('zh-hant') === 0; });
+  var autoHans = normalized.some(function (item) { return /^zh/.test(item); });
+  setLegalLang(saved || (autoHant ? 'zhHant' : (autoHans ? 'zhHans' : 'en')));
+})();
+</script>
+</body>
+</html>
